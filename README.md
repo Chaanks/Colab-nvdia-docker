@@ -5,15 +5,15 @@ Install and RUN
 ==============
 
 ```
+build docker image
+
+
 $ docker run --runtime=nvidia -it --rm -p 8081:8081 --cap-add SYS_ADMIN --device /dev/fuse \
-             --security-opt apparmor=unconfined ikeyasu/colab-local:latest
+             --security-opt apparmor=unconfined image-name
 ```
 
 LICENSE
 =======
-
-Copyright 2018 ikeyasu. All rights reserved.
-Licensed under the Apache License, Version 2.0.
 
 This repository is forked from
 https://github.com/googlecolab/backend-container/blob/bcbbf44/containers/Dockerfile
